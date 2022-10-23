@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ body {
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+  }
+
+/** code by webdevtrick ( https://webdevtrick.com ) **/
+@font-face {
+    font-family: 'neontubes';
+    src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+    src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    font-family: "neontubes";
+    white-space: nowrap;
+  }
+  .main p {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    will-change: opacity;
+  }
+  .main .webdev {
+    font-size: 80px;
+    color: #ffd9e2;
+    text-shadow: 0 0 0 transparent, 0 0 10px #5e2296, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #5e2296, 0 0 100px #5e2296, 0 0 200px #5e2296, 0 0 300px #5e2296, 0 0 500px #5e2296, 0 0 1000px #5e2296;
+    -webkit-animation: blink 4s infinite alternate;
+            animation: blink 4s infinite alternate;
+  }
+  .main .socod {
+    font-size: 40px;
+    color: #d4eaff;
+    text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+    -webkit-animation: buzz 0.01s infinite alternate;
+            animation: buzz 0.01s infinite alternate;
+  }
+   
+  @-webkit-keyframes buzz {
+    100% {
+      opacity: 0.80;
+    }
+  }
+   
+  @keyframes buzz {
+    100% {
+      opacity: 0.80;
+    }
+  }
+  @-webkit-keyframes blink {
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
+  }
+ 
+
+// neon linie
+hr {
+    width: 80%;
+    margin: auto;
+    border: 2px solid #561f83;
+    color: rgb(77, 25, 112);
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px 5px rgb(112, 61, 138);
+    animation: glow 1.3s ease-in-out infinite;
+    -webkit-animation: glow 1.5s ease-in-out infinite;
+  }
+
+// SOCIAL MEDIA
+
+.mama{
+  position: static;
+  background-image: url("/images/pic.jpg");
+  height: 560px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container{
+    // background-image: url('/images/pic.jpg');
+    // background-size: cover;
+    // width: 100%;
+    // height: 500px; 
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  ul li.spotify{
+    background: #1fa51a;
+  }
+  
+  ul li.apple{
+    background: #0d0e0d;
+  }
+
+  ul li.instagram{
+    background: #cf269a;
+  }
+  
+  ul li.youtube{
+    background: #f31515;
+  }
+
+  ul li.apple div.slider{
+    background: #0c0c0c;
+  }
+  
+  ul li.spotify div.slider{
+    background: #6fd491;
+  }
+  
+  ul li.instagram div.slider{
+    background: #dd94c6;
+  }
+  
+  ul li.youtube div.slider{
+    background: #f16b5a;
+  }
+  
+  .slider {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 51px;
+    width: 0px;
+    height: 50px;
+    border-radius: 3px;
+    transition: all 0.5s 0.3s ease;
+  }
+  
+  .slider p {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(248, 246, 246);
+    text-align: center;
+    line-height: 50px;
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  ul li:hover .slider {
+    width: 200px;
+    transition: all 0.5s ease;
+  }
+  
+  ul li:hover .slider p {
+    opacity: 1;
+    transition: all 1s 0.2s ease;
+  } 
+}
+}
+
+// YOUTUBE VIDEOS
+.papa {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+
+  iframe {
+    width: 60%;
+    height: 530px;
+  }
+}
+
+// MEDIA QUERIES
+// PHONES
+@media screen and (max-width: 480px){
+  .main {
+    text-align: center;
+    .socod {
+      font-size: 30px;
+    }
+    .webdev{
+      font-size: 50px;
+    }
+  }
+  .mama {
+  width: 100%;
+  background-position: center;
+  }
+  .papa {
+    iframe {
+      height: auto;
+    }
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .main {
+    text-align: center;
+    .socod {
+      font-size: 30px;
+    }
+    .webdev{
+      font-size: 50px;
+    }
+  }
+  .mama {
+  background-position: center;
+  }
+  .papa {
+    iframe {
+      height: auto;
+    }
+  }
+}
+
+// @media screen and (min-width: 1025px) {
+// .main {
+
+// }
+
+// }
