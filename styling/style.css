@@ -104,13 +104,14 @@ hr {
 .mama {
   position: static;
   background-image: url("/images/pic.jpg");
-  height: 560px;
+  height: 660px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .mama .container {
   position: absolute;
-  top: 60%;
+  margin-top: 20%;
   left: 30%;
   transform: translate(-50%, -50%);
 }
@@ -118,6 +119,7 @@ hr {
   list-style: none;
 }
 .mama .container ul li {
+  font-size: 30px;
   width: 50px;
   height: 50px;
   position: relative;
@@ -204,14 +206,16 @@ hr {
     text-align: center;
   }
   .main .socod {
-    font-size: 30px;
+    font-size: 20px;
   }
   .main .webdev {
-    font-size: 50px;
+    font-size: 30px;
   }
   .mama {
-    width: 100%;
-    background-position: center;
+    height: 300px;
+  }
+  .mama .container {
+    margin-top: 30%;
   }
   .papa iframe {
     height: auto;
@@ -228,7 +232,10 @@ hr {
     font-size: 50px;
   }
   .mama {
-    background-position: center;
+    height: 400px;
+  }
+  .mama .container {
+    margin-top: 20%;
   }
   .papa iframe {
     height: auto;
