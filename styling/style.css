@@ -111,7 +111,6 @@ hr {
 }
 .mama .container {
   position: absolute;
-  margin-top: 20%;
   left: 30%;
   transform: translate(-50%, -50%);
 }
@@ -243,7 +242,7 @@ hr {
 }
 @media screen and (min-width: 801px) {
   .mama {
-    height: 400px;
+    height: 600px;
   }
   .mama .container {
     margin-top: 20%;
