@@ -221,7 +221,7 @@ hr {
     height: auto;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
   .main {
     text-align: center;
   }
@@ -235,9 +235,17 @@ hr {
     height: 400px;
   }
   .mama .container {
-    margin-top: 20%;
+    margin-top: 30%;
   }
   .papa iframe {
     height: auto;
+  }
+}
+@media screen and (min-width: 801px) {
+  .mama {
+    height: 400px;
+  }
+  .mama .container {
+    margin-top: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
