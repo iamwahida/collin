@@ -118,11 +118,13 @@ hr {
     // background-image: url('/images/pic.jpg');
     // background-size: cover;
     // width: 100%;
-    // height: 500px; 
-  position: absolute;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  ul {
+    // height: 500px
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    ul {
     list-style: none;
 
     li {
@@ -229,7 +231,25 @@ hr {
 
 // MEDIA QUERIES
 // PHONES
-@media screen and (max-width: 480px){
+@media (max-width: 350px) {
+  .mama {
+    height: 200px;
+    .container {
+      ul {
+        margin-top: 100px;
+        li {
+          width: 30px;
+          height: 30px;
+        a {
+        font-size: 10px;
+      }
+    }
+    }
+    }
+  }
+}
+
+@media (max-width: 480px){
   .main {
     text-align: center;
     .socod {
@@ -242,12 +262,20 @@ hr {
 
   .mama {
     height: 300px;
-
     .container {
       margin-top: 35%;
+      ul {
+        li {
+          width: 35px;
+          height: 35px;
+          padding: 2px;
+        a {
+        font-size: 15px;
+      }
+    }
+    }
     }
   }
-
 
   .papa {
     iframe {
@@ -283,7 +311,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 801px) {
+@media (min-width: 801px) {
   .mama {
     height: 600px;
  
