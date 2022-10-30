@@ -202,32 +202,6 @@ hr {
   height: 530px;
 }
 
-.pic-container {
-  margin-left: 30%;
-  max-width: 600px;
-  max-height: 450px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 100px;
-}
-.pic-container img {
-  width: 400px;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
-  transform-origin: center;
-  transform: perspective(800px) rotateY(25deg);
-  transition: 0.5s;
-}
-.pic-container img:hover {
-  transform: perspective(800px) rotateY(0deg);
-  opacity: 1;
-}
-
 @media (max-width: 350px) {
   .mama {
     height: 200px;
@@ -241,9 +215,6 @@ hr {
   }
   .mama .container ul li a {
     font-size: 10px;
-  }
-  .pic-container {
-    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -279,12 +250,6 @@ hr {
   .papa iframe {
     height: auto;
   }
-  .pic-container {
-    width: 100%;
-    flex-direction: column;
-    margin-left: 60px;
-    margin-top: 100px;
-  }
 }
 @media screen and (min-width: 481px) and (max-width: 960px) {
   .main {
@@ -305,11 +270,6 @@ hr {
   .papa iframe {
     height: auto;
   }
-  .pic-container {
-    flex-direction: column;
-    margin-left: 100px;
-    margin-top: 100px;
-  }
 }
 @media (min-width: 801px) {
   .mama {
@@ -317,8 +277,5 @@ hr {
   }
   .mama .container {
     margin-top: 20%;
-  }
-  .pic-container {
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
